@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pigal</title>
+    <link rel="stylesheet" type="text/css" media="all" href="/stylesheets/pixel8.css" />
+  </head>
+  <body>
+
+    <div class="form">
+      <form method="post" enctype="multipart/form-data" action="/convert">
+        <input type="file" name="convert" />
+        <input type="submit" name="go!" />
+      </form>
+    </div>
+
+    <% if @rgb_matrix %>
+ <pre><%= @rgb_matrix %></pre>
+    <% end %>
+
+  </body>
+</html>
